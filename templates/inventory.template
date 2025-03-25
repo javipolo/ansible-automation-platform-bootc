@@ -1,0 +1,34 @@
+[automationcontroller]
+${AAP_HOSTNAME} ansible_user=${ANSIBLE_USER}
+
+[automationhub]
+${AAP_HOSTNAME} ansible_user=${ANSIBLE_USER}
+
+[automationeda]
+${AAP_HOSTNAME} ansible_user=${ANSIBLE_USER}
+
+[automationgateway]
+${AAP_HOSTNAME} ansible_user=${ANSIBLE_USER}
+
+[database]
+${AAP_HOSTNAME} ansible_user=${ANSIBLE_USER}
+
+[all:vars]
+postgresql_admin_username=${AAP_PG_ADMIN_USER}
+postgresql_admin_password=${AAP_PG_ADMIN_PASSWORD}
+controller_admin_password=${AAP_CONTROLLER_ADMIN_PASSWORD}
+controller_pg_host=${AAP_HOSTNAME}
+controller_pg_password=${AAP_CONTROLLER_PG_PASSWORD}
+hub_admin_password=${AAP_HUB_ADMIN_PASSWORD}
+hub_pg_host=${AAP_HOSTNAME}
+hub_pg_password=${AAP_HUB_PG_PASSWORD}
+eda_admin_password=${AAP_EDA_ADMIN_PASSWORD}
+eda_pg_host=${AAP_HOSTNAME}
+eda_pg_password=${AAP_EDA_PG_PASSWORD}
+gateway_admin_password=${AAP_GATEWAY_ADMIN_PASSWORD}
+gateway_pg_host=${AAP_HOSTNAME}
+gateway_pg_password=${AAP_GATEWAY_PG_PASSWORD}
+registry_username=${REGISTRY_USERNAME}
+registry_password=${REGISTRY_PASSWORD}
+ansible_become_password=${ANSIBLE_USER_PASSWORD}
+redis_mode=standalone

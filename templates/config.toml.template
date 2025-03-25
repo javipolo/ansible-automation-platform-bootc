@@ -1,0 +1,5 @@
+[[customizations.user]]
+name = "${ANSIBLE_USER}"
+key = "${ANSIBLE_USER_SSHKEY}"
+password = "${ANSIBLE_USER_PASSWORD}"
+groups = [ "wheel" ]
